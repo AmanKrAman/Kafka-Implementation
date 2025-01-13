@@ -1,2 +1,10 @@
 # Kafka-Implementation
 learning kafka (NodeJs)
+
+run docker
+
+then 
+docker run -p 9092:9092 -e KAFKA_ZOOKEEPER_CONNECT=192.168.0.154:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://192.168.0.154:9092 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 confluentinc/cp-kafka
+
+then 
+node admin/producer/consumer.js
